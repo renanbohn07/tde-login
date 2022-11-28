@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autenticado</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body * {
+            box-sizing: border-box;
+        }
+        .main_res {
+            width: 100vw;
+            height: 100vh;
+            background: #383838;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .rigth_res {
+            width: 50vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card_res{
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 30px 35px;
+            background: #555555;
+            box-shadow: 0px 10px 40px #00000056;
+        }
+        .card_res > h1 {
+            color: #ff7300;
+            font-weight: 800;
+            margin: 0;
+        }
+        @media only screen and (max-width: 950px) {
+            .card_res {
+                width: 85%;
+            }
+        }
+        @media only screen and (max-width: 600px) {
+           .rigth_res {
+            width: 100%;
+            height: auto;
+           }
+        }
+        .card_res {
+            width: 90%;
+        }
+        .card_res > h2 {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_res">
+        <div class="rigth_res">
+            <div class="card_res" >
+                <h1>Você está logado! Seja bem vindo:</h1>
+                <h2><%= login %></h2>
+        </div>
+    </div>
+</body>
+</html>
