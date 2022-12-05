@@ -22,21 +22,23 @@
             align-items: center;
         }
         .rigth_login {
-            width: 50vw;
+            width: 90vw;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .card-login{
-            width: 60%;
+            width: 95%;
+            height: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             padding: 30px 35px;
-            background: #555555;
+            background: #404040;
             box-shadow: 0px 10px 40px #00000056;
+            border-radius: 70px;
         }
         .card-login > h1 {
             color: #ff7300;
@@ -67,7 +69,7 @@
             margin-bottom: 10px;
         }
         .textfield > input::placeholder {
-            color: #000000;
+            color: #5b5b5b;
         }
         .btn-login {
             width: 100%;
@@ -75,9 +77,8 @@
             margin: 25px;
             border: none;
             outline: none;
-            text-transform: uppercase;
-            font-weight: 800;
-            letter-spacing: 3px;
+            font-weight: 600;
+            font-size: 12pt;
             color: #FFFFFF;
             background: #ff7300;
             cursor: pointer;
@@ -85,7 +86,7 @@
         }
         @media only screen and (max-width: 950px) {
             .card-login {
-                width: 85%;
+                width: 90%;
             }
         }
         @media only screen and (max-width: 600px) {
@@ -95,7 +96,7 @@
            }
         }
         .card-login {
-            width: 90%;
+            width: 100%;
         }
         .registro > a {
             color: #ff7300;
@@ -111,20 +112,20 @@
         <form method="post">
         <div class="rigth_login">
             <div class="card-login" >
-                <h1>CADASTRE-SE</h1>
+                <h1>Faça abaixo seu Cadastro:</h1>
                 <div class="textfield" met>
-                    <label for="usuario">Usuário</label>
+                    <label for="usuario">Qual será o seu usuário?</label>
                     <input type="text" name="login" placeholder="Usuário" required>
                 </div>
                 <div class="textfield">
-                    <label for="senha">Senha</label>
+                    <label for="senha">Qual será a sua senha?</label>
                     <input type="password" name="password" placeholder="Senha" required onchange="confereSenha()">
                 </div>
                 <div class="textfield">
                     <label for="senha">Confirme sua senha</label>
                     <input type="password" name="confirma" placeholder="Confirme sua senha" required onchange="confereSenha()">
                 </div>
-                <button class="btn-login">Criar cadastro</button>
+                <button class="btn-login">Criar Cadastro</button>
             </div>
         </div>
     </form>

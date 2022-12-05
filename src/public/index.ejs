@@ -13,36 +13,48 @@
         body * {
             box-sizing: border-box;
         }
-        .main-login {
+        .login-principal {
             width: 100vw;
             height: 100vh;
-            background: #383838;
+            background: #323232;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .rigth_login {
-            width: 50vw;
+            width: 90vw;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
         .card-login{
-            width: 60%;
+            width: 95%;
+            height: 80%;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             padding: 30px 35px;
-            background: #555555;
+            background: #404040;
             box-shadow: 0px 10px 40px #00000056;
+            border-radius: 70px;
         }
         .card-login > h1 {
             color: #ff7300;
             font-weight: 800;
             margin: 0;
+            border-radius: 10px;
         }
+
+        .card-login > h2 {
+            color: #ffffff;
+            font-weight: 800;
+            margin: 0;
+            border-radius: 10px;
+        }
+        
+
         .textfield {
             width: 100%;
             display: flex;
@@ -67,7 +79,7 @@
             margin-bottom: 10px;
         }
         .textfield > input::placeholder {
-            color: #000000;
+            color: #5b5b5b;
         }
         .btn-login {
             width: 100%;
@@ -75,17 +87,15 @@
             margin: 25px;
             border: none;
             outline: none;
-            text-transform: uppercase;
-            font-weight: 800;
-            letter-spacing: 3px;
+            font-weight: 600;
+            font-size: 12pt;
             color: #ffffff;
             background: #ff7300;
             cursor: pointer;
-            box-shadow: 0px 10px 40px -12px #ff000052;
         }
         @media only screen and (max-width: 950px) {
             .card-login {
-                width: 85%;
+                width: 90%;
             }
         }
         @media only screen and (max-width: 600px) {
@@ -95,7 +105,7 @@
            }
         }
         .card-login {
-            width: 90%;
+            width: 100%;
         }
         .registro > a {
             color: #ff7300;
@@ -107,20 +117,21 @@
     </style>
 </head>
 <body>
-    <div class="main-login">
+    <div class="login-principal">
         <form method="post">
         <div class="rigth_login">
             <div class="card-login" >
-                <h1>FAÇA O LOGIN</h1>
+                <h1>Seja Bem-Vindo!</h1>
+                <h2>Faça abaixo o Login:</h2>
                 <div class="textfield" met>
-                    <label for="usuario">Usuário</label>
+                    <label for="usuario">Qual é o seu Usuário?</label>
                     <input type="text" name="login" placeholder="Usuário">
                 </div>
                 <div class="textfield">
-                    <label for="senha">Senha</label>
+                    <label for="senha">Qual é a sua Senha?</label>
                     <input type="password" name="senha" placeholder="Senha">
                 </div>
-                <button class="btn-login">Login</button>
+                <button class="btn-login">Clique aqui para fazer Login</button>
                 <div class="registro">
                     <a href="./cadastro.ejs" target="_blank">Cadastre-se</a>
                     </div>
